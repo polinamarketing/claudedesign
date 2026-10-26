@@ -17,3 +17,12 @@ To install it in your local Claude Code for all projects, run `/plugin marketpla
 Zips for claude.ai are in `dist/taste-skill/`, one per skill. Upload each skill you want separately under **Settings → Capabilities → Skills**.
 
 To install it in your local Claude Code, run `/plugin marketplace add Leonxlnx/taste-skill`, then `/plugin install taste-skill@taste-skill`.
+
+## Logo Design Skill
+
+[Logo Design Skill](https://github.com/kaankiziltug/logo-design-skill) (MIT, by kaankiziltug) helps you design logos and brand marks. It covers the brief, concepts, SVG construction, testing (16 px, one-colour, shelf test), presentation boards and brand guidelines. It includes a searchable reference library of more than 1,400 real-world SVG logos. Those logos are trademarks of their owners and are there only for study. See `TRADEMARKS.md` in the skill folder.
+
+- `.claude/skills/logo-design/`: the skill. Claude Code picks it up automatically in this repo. Ask for a logo, or run `/logo-design`. Its scripts are plain Python 3 with no dependencies.
+- `dist/logo-design/logo-design.zip`: the full skill for upload to claude.ai under **Settings → Capabilities → Skills**. If the upload is too large, use `logo-design-lite.zip`, which leaves out the SVG library and its gallery.
+
+To install it in your local Claude Code, run `/plugin marketplace add kaankiziltug/logo-design-skill`, then `/plugin install logo-design@logo-design-skill`.
